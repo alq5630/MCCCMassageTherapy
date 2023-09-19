@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, serif;
+  background-color: #f8f5e1;
+  text-align: center;
+}
+
+header {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAJ9S2EfKjvQVx5uIfYo6tCngu_2JQ662wb7hIINq0rJHajcjkzTh8AqaQs-v6sImb4sQ&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: 1700px 150px;
+  color: #FAF0E6;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 2px pink;
+}
+
+header img {
+  max-width: 150px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+
+nav ul li {
+  margin-right: 20px;
+  margin-left: 150px;
+}
+
+nav ul li:last-child {
+  margin-right: 20px;
+}
+
+nav a {
+  color: tan;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #e0ab5d;
+}
+
+section {
+  padding: 20px;
+  background-color: #FFFAFA;
+  margin: 20px;
+  border-radius: 100px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 1px tan;
+
+}
+
+section h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #8FBC8F;
+}
+
+section h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #8f6338;
+}
+
+.decorative-line {
+  border-top: 2px solid #e0ab5d;
+  margin: 20px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: tan;
+  color: #fff;
+  font-size: 14px;
+}
+
+.ppt-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FFE4E1;
+  color: #8B4513;
+  text-decoration: none;
+  border: solid;
+  border-color: tan;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+.ppt-button:hover {
+  background-color: #BC8F8F;
+  cursor: pointer;
+
+}
+.syllabus-button {
+  display: inline-block;
+  padding: 10px;
+  background-color: #FAEBD7;
+  color: #8FBC8F;
+  text-decoration: none;
+  border: solid;
+  border-color: #FFE4E1;
+  border-radius: 0px;
+  margin: 0;
+  font-size: 32px;
+}
+
+.syllabus-button:hover {
+  background-color: #BC8F8F;
+  cursor: pointer;
+
+}
+.handout-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FFE4E1;
+  color: #8B4513;
+  text-decoration: none;
+  border: solid;
+  border-color: tan;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+.handout-button:hover {
+  background-color: #BC8F8F;
+  cursor: pointer;
+
+}
+.note-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FFE4E1;
+  color: #8B4513;
+  text-decoration: none;
+  border: solid;
+  border-color: tan;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+.note-button:hover {
+  background-color: #BC8F8F;
+  cursor: pointer;
+
+}
+.quiz-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FFE4E1;
+  color: #8B4513;
+  text-decoration: none;
+  border: solid;
+  border-color: tan;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+.quiz-button:hover {
+  background-color: #BC8F8F;
+  cursor: pointer;
+
+}
+.study-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FFE4E1;
+  color: #8B4513;
+  text-decoration: none;
+  border: solid;
+  border-color: tan;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+.study-button:hover {
+  background-color: #BC8F8F;
+  cursor: pointer;
+
+}
