@@ -119,7 +119,7 @@ nav a:hover {
   }
 
   .sidebar {
-    display: block; /* Show the sidebar */
+    display: none; /* Show the sidebar */
     width: 100%; /* Occupy full width of the screen */
   }
 
