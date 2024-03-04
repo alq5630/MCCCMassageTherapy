@@ -136,9 +136,9 @@ nav a:hover {
 
 #mainImage {
   width: 100%;
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
-  margin: 20px auto;
+  margin: auto;
   opacity: 0.8;
 }
 
