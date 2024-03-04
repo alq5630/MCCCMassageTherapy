@@ -1,218 +1,1575 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 10px;
+  padding: 10px;
   font-family: Georgia, serif;
   background-color: #f8f5e1;
   text-align: center;
+  list-style: none;
 }
 
 header {
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAJ9S2EfKjvQVx5uIfYo6tCngu_2JQ662wb7hIINq0rJHajcjkzTh8AqaQs-v6sImb4sQ&usqp=CAU);
+  background-image: url(data:image/jpeg;base64,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);
   background-repeat: no-repeat;
   background-size: 1700px 150px;
-  color: #FAF0E6;
+  color: #A7727D;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
-  text-shadow: 1px 1px 2px pink;
+  text-shadow: 1px 1px 2px black;
+  cursor: pointer;
 }
 
+header:hover {
+  color: #CB8A97;
+  text-shadow: 1px 1px 2px black;
+}
+
+/* Basic styling for navigation */
+nav {
+  background-color: #A7727D;
+  color: #fff;
+  padding: 10px;
+}
 
 nav ul {
-  list-style: none;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
 }
-
 
 nav ul li {
+  margin: 0 9px;
+  position: relative;
   margin-right: 20px;
-  margin-left: 80px;
+  padding-right: 10px;
 }
 
-nav ul li:last-child {
-  margin-right: 20px;
+nav ul li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 20px;
+  background-color: white;
 }
 
 nav a {
   color: tan;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
   transition: color 0.3s;
+
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
 }
 
 nav a:hover {
-  color: #e0ab5d;
+  color: black;
+  font-weight: bold;
 }
 
-section {
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+}
+
+.sidebar {
+  display: none;
+  width: 200px;
+  background-color: #f4f4f4;
   padding: 20px;
-  background-color: #FFFAFA;
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.centered-content {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.container {
+  display: flex;
+}
+
+
+#mainImage {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
   margin: 20px;
-  border-radius: 100px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  text-shadow: 1px 1px 1px tan;
-
+  opacity: 0.8;
 }
 
-section h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
-  color: #8FBC8F;
-}
-
-section h2 {
-  font-size: 20px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  color: #8f6338;
-}
-
-.decorative-line {
-  border-top: 2px solid #e0ab5d;
-  margin: 20px 0;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: tan;
+#syllabus {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 16px;
+  background-color: #573F4C;
   color: #fff;
-  font-size: 14px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
 }
 
-.ppt-button {
+#powerPointsLink {
+  font-size: 24px;
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #FFE4E1;
-  color: #8B4513;
+  padding: 20px 16px;
+  background-color: #573F4C;
+  color: #fff;
   text-decoration: none;
-  border: solid;
-  border-color: tan;
-  border-radius: 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+#handoutsLink {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 16px;
+  background-color: #573F4C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+
+#noteGuidesLink {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 16px;
+  background-color: #573F4C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+
+#practiceQuizzesLink {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 16px;
+  background-color: #573F4C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+#studyGuideLink {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 16px;
+  background-color: #573F4C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+
+#chapter3Link {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
   margin: 5px;
-  font-size: 16px;
 }
 
-.ppt-button:hover {
-  background-color: #BC8F8F;
-  cursor: pointer;
-
+#chapter3Link:hover {
+  background-color: #E4C3D1;
 }
-.syllabus-button {
+
+#chapter8Link {
+  font-size: 12px;
   display: inline-block;
-  padding: 10px;
-  background-color: #FAEBD7;
-  color: #8FBC8F;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
   text-decoration: none;
-  border: solid;
-  border-color: #FFE4E1;
-  border-radius: 0px;
-  margin: 0;
-  font-size: 32px;
-}
-
-.syllabus-button:hover {
-  background-color: #BC8F8F;
-  cursor: pointer;
-
-}
-.handout-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #FFE4E1;
-  color: #8B4513;
-  text-decoration: none;
-  border: solid;
-  border-color: tan;
-  border-radius: 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
   margin: 5px;
-  font-size: 16px;
 }
 
-.handout-button:hover {
-  background-color: #BC8F8F;
-  cursor: pointer;
-
+#chapter8Link:hover {
+  background-color: #E4C3D1;
 }
-.note-button {
+
+#chapter7Link {
+  font-size: 12px;
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #FFE4E1;
-  color: #8B4513;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
   text-decoration: none;
-  border: solid;
-  border-color: tan;
-  border-radius: 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
   margin: 5px;
-  font-size: 16px;
 }
 
-.note-button:hover {
-  background-color: #BC8F8F;
-  cursor: pointer;
-
+#chapter7Link:hover {
+  background-color: #E4C3D1;
 }
-.quiz-button {
+
+#chapter9Link {
+  font-size: 12px;
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #FFE4E1;
-  color: #8B4513;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
   text-decoration: none;
-  border: solid;
-  border-color: tan;
-  border-radius: 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
   margin: 5px;
-  font-size: 16px;
 }
 
-.quiz-button:hover {
-  background-color: #BC8F8F;
-  cursor: pointer;
-
+#chapter9Link:hover {
+  background-color: #E4C3D1;
 }
-.study-button {
+
+#massageTerminology {
+  font-size: 12px;
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #FFE4E1;
-  color: #8B4513;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
   text-decoration: none;
-  border: solid;
-  border-color: tan;
-  border-radius: 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
   margin: 5px;
-  font-size: 16px;
 }
 
-.study-button:hover {
-  background-color: #BC8F8F;
-  cursor: pointer;
-
+#massageTerminology:hover {
+  background-color: #E4C3D1;
 }
-.demo-button {
+
+#fiveStrokes {
+  font-size: 12px;
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #FFE4E1;
-  color: #8B4513;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
   text-decoration: none;
-  border: solid;
-  border-color: tan;
-  border-radius: 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
   margin: 5px;
-  font-size: 16px;
 }
 
-.demo-button:hover {
-  background-color: #BC8F8F;
-  cursor: pointer;
+#fiveStrokes:hover {
+  background-color: #E4C3D1;
+}
 
+#endangermentSites {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#endangermentSites:hover {
+  background-color: #E4C3D1;
+}
+
+#directionalTerms {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#directionalTerms:hover {
+  background-color: #E4C3D1;
+}
+
+#chapter3Note {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter3Note:hover {
+  background-color: #E4C3D1;
+}
+
+#chapter8Note {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter8Note:hover {
+  background-color: #E4C3D1;
+}
+
+#chapter7Note {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter7Note:hover {
+  background-color: #E4C3D1;
+}
+
+#chapter9Note {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter9Note:hover {
+  background-color: #E4C3D1;
+}
+
+
+#chapter3Pq {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter3Pq:hover {
+  background-color: #E4C3D1;
+}
+
+#chapter8Pq {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter8Pq:hover {
+  background-color: #E4C3D1;
+}
+
+#chapter7Pq {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter7Pq:hover {
+  background-color: #E4C3D1;
+}
+
+#chapter9Pq {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter9Pq:hover {
+  background-color: #E4C3D1;
+}
+
+
+#directionalTermsPq {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#directionalTermsPq:hover {
+  background-color: #E4C3D1;
+}
+
+#muscleConceptsPq {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#muscleConceptsPq:hover {
+  background-color: #E4C3D1;
+}
+
+#studyGuide {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#studyGuide:hover {
+  background-color: #E4C3D1;
+}
+
+
+#powerPointsLink2 {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 16px;
+  background-color: #573F4C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+#handoutsLink2 {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 16px;
+  background-color: #573F4C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+
+#noteGuidesLink2 {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 16px;
+  background-color: #573F4C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+
+#practiceQuizzesLink2 {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 16px;
+  background-color: #573F4C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+#studyGuideLink2 {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 16px;
+  background-color: #573F4C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+
+#chapter6Link {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter6Link:hover {
+  background-color: #E4C3D1;
+}
+
+#chapter10Link {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter10Link:hover {
+  background-color: #E4C3D1;
+}
+
+#footReflexology {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#footReflexology:hover {
+  background-color: #E4C3D1;
+}
+
+#massageEffects {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#massageEffects:hover {
+  background-color: #E4C3D1;
+}
+
+#footMap {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#footMap:hover {
+  background-color: #E4C3D1;
+}
+
+#chapter6Note {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter6Note:hover {
+  background-color: #E4C3D1;
+}
+
+#chapter10Note {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter10Note:hover {
+  background-color: #E4C3D1;
+}
+
+#chapter6Pq {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter6Pq:hover {
+  background-color: #E4C3D1;
+}
+
+#chapter10Pq {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter10Pq:hover {
+  background-color: #E4C3D1;
+}
+
+#studyGuide2 {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#studyGuide2:hover {
+  background-color: #E4C3D1;
 }
 
 
 
-figure {
-  margin: 0;
+#powerPointsLink3 {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 16px;
+  background-color: #573F4C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
 }
 
+
+#noteGuidesLink3 {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 16px;
+  background-color: #573F4C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+
+#practiceQuizzesLink3 {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 16px;
+  background-color: #573F4C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+#studyGuideLink3 {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 16px;
+  background-color: #573F4C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+
+#chapter3Path {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter3Path:hover {
+  background-color: #E4C3D1;
+}
+
+#chapter2Link {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter2Link:hover {
+  background-color: #E4C3D1;
+}
+
+#chapter1Link {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter1Link:hover {
+  background-color: #E4C3D1;
+}
+
+#chapter3PathNote {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter3PathNote:hover {
+  background-color: #E4C3D1;
+}
+
+#chapter2Note {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter2Note:hover {
+  background-color: #E4C3D1;
+}
+
+#chapter3PathPq {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter3PathPq:hover {
+  background-color: #E4C3D1;
+}
+
+#chapter2Pq {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter2Pq:hover {
+  background-color: #E4C3D1;
+}
+
+#chapter1Pq {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter1Pq:hover {
+  background-color: #E4C3D1;
+}
+
+#studyGuide3 {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#studyGuide3:hover {
+  background-color: #E4C3D1;
+}
+
+#powerPointsLink4 {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 16px;
+  background-color: #573F4C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+
+#noteGuidesLink4 {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 16px;
+  background-color: #573F4C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+#chapter14Link {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter14Link:hover {
+  background-color: #E4C3D1;
+}
+
+#chapter14Note {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter14Note:hover {
+  background-color: #E4C3D1;
+}
+
+#powerPointsLink5 {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 16px;
+  background-color: #573F4C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+#chapter15Link {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter15Link:hover {
+  background-color: #E4C3D1;
+}
+
+#jointMobilizations {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#jointMobilizations:hover {
+  background-color: #E4C3D1;
+}
+
+#chapter11Link {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter11Link:hover {
+  background-color: #E4C3D1;
+}
+
+#asianBodywork {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#asianBodywork:hover {
+  background-color: #E4C3D1;
+}
+
+#sportsMassage {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#sportsMassage:hover {
+  background-color: #E4C3D1;
+}
+
+#powerPointsLink6 {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 16px;
+  background-color: #573F4C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+
+#noteGuidesLink6 {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 16px;
+  background-color: #573F4C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+
+#practiceQuizzesLink6 {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 16px;
+  background-color: #573F4C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+#businessProject {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 16px;
+  background-color: #573F4C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+#chapter17Link {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter17Link:hover {
+  background-color: #E4C3D1;
+}
+
+#chapter17Note {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter17Note:hover {
+  background-color: #E4C3D1;
+}
+
+#chapter17Pq {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#chapter17Pq:hover {
+  background-color: #E4C3D1;
+}
+
+#businessOutline {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#businessOutline:hover {
+  background-color: #E4C3D1;
+}
+
+
+#businessExample {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#businessExample:hover {
+  background-color: #E4C3D1;
+}
+
+
+#businessFinancial {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#businessFinancial:hover {
+  background-color: #E4C3D1;
+}
+
+#massageRoutine {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 16px;
+  background-color: #573F4C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+#massageDemo {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 16px;
+  background-color: #573F4C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+#backRoutine {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#backRoutine:hover {
+  background-color: #E4C3D1;
+}
+
+#postLegs {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#postLegs:hover {
+  background-color: #E4C3D1;
+}
+
+#faceNeckChest {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#faceNeckChest:hover {
+  background-color: #E4C3D1;
+}
+
+#handsArms {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#handsArms:hover {
+  background-color: #E4C3D1;
+}
+
+#abdominals {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#abdominals:hover {
+  background-color: #E4C3D1;
+}
+
+#antLegsFeet {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#antLegsFeet:hover {
+  background-color: #E4C3D1;
+}
+
+#upperBack {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#upperBack:hover {
+  background-color: #E4C3D1;
+}
+
+#lowBack1 {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#lowBack1:hover {
+  background-color: #E4C3D1;
+}
+
+#lowBack2 {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#lowBack2:hover {
+  background-color: #E4C3D1;
+}
+
+#postLegDemo {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#postLegDemo:hover {
+  background-color: #E4C3D1;
+}
+
+#face {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#face:hover {
+  background-color: #E4C3D1;
+}
+
+#neckChest1 {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#neckChest1:hover {
+  background-color: #E4C3D1;
+}
+
+#neckChest2 {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#neckChest2:hover {
+  background-color: #E4C3D1;
+}
+
+
+#armsAbs {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#armsAbs:hover {
+  background-color: #E4C3D1;
+}
+
+#musclePPT {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 16px;
+  background-color: #573F4C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+#muscleMeds {
+  font-size: 24px;
+  display: inline-block;
+  padding: 20px 16px;
+  background-color: #573F4C;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+#muscles {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#muscles:hover {
+  background-color: #E4C3D1;
+}
+
+#med1 {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#med1:hover {
+  background-color: #E4C3D1;
+}
+
+#med2 {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#med2:hover {
+  background-color: #E4C3D1;
+}
+
+#med3 {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#med3:hover {
+  background-color: #E4C3D1;
+}
+
+#med4 {
+  font-size: 12px;
+  display: inline-block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#med4:hover {
+  background-color: #E4C3D1;
+}
