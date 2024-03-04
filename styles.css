@@ -111,9 +111,23 @@ nav a:hover {
 
 .container {
   display: flex;
-  flex-direction: column;
 }
 
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: block; /* Show the sidebar */
+    width: 100%; /* Occupy full width of the screen */
+  }
+
+  .content {
+    width: 100%; /* Occupy full width of the screen */
+    margin-left: 0; /* Remove left margin */
+  }
+}
 
 #mainImage {
   width: 100%;
