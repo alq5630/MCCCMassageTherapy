@@ -47,6 +47,8 @@ document.addEventListener('DOMContentLoaded', function() {
       sidebarContent += '<a href="#" id="chapter7Note">Chapter 7: Body Mechanics, Client Positioning, and Draping</a><br>';
       sidebarContent += '<a href="#" id="chapter9Note">Chapter 9: Standard Precautions, Contraindications, and Emergency Preparedness</a><br>';
       sidebarContent += '<h2 id="practiceQuizzesLink">Practice Quizzes</h2>';
+      sidebarContent += '<a href="#" id="directionalTermsPq">Directional Terms, Body Movements, and Anatomical Positions</a><br>';
+      sidebarContent += '<a href="#" id="muscleConceptsPq">Muscle Concepts</a><br>';
       sidebarContent += '<a href="#" id="chapter3Pq">Chapter 3: Tools of the Trade</a><br>';
       sidebarContent += '<a href="#" id="chapter8Pq">Chapter 8: Massage Techniques</a><br>';
       sidebarContent += '<a href="#" id="chapter7Pq">Chapter 7: Body Mechanics, Client Positioning, and Draping</a><br>';
