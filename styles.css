@@ -5,6 +5,7 @@ body {
   background-color: #f8f5e1;
   text-align: center;
   list-style: none;
+  overflow-x: hidden;
 }
 
 header {
@@ -120,17 +121,22 @@ nav a:hover {
   }
 
   .sidebar {
-    display: none; /* Show the sidebar */
-    width: 100%; /* Occupy full width of the screen */
+    display: none;
+    /* Show the sidebar */
+    width: 100%;
+    /* Occupy full width of the screen */
   }
 
   .content {
-    width: 100%; /* Occupy full width of the screen */
-    margin-left: 0; /* Remove left margin */
+    width: 100%;
+    /* Occupy full width of the screen */
+    margin-left: 0;
+    /* Remove left margin */
   }
 
   .centered-content {
-    max-width: 90%; /* Adjust maximum width for smaller screens */
+    max-width: 90%;
+    /* Adjust maximum width for smaller screens */
   }
 }
 
@@ -144,7 +150,7 @@ nav a:hover {
 
 #syllabus {
   font-size: 24px;
-  display: inline-block;
+  display: block;
   padding: 20px 16px;
   background-color: #573F4C;
   color: #fff;
@@ -156,7 +162,7 @@ nav a:hover {
 
 #powerPointsLink {
   font-size: 24px;
-  display: inline-block;
+  display: block;
   padding: 20px 16px;
   background-color: #573F4C;
   color: #fff;
@@ -168,7 +174,7 @@ nav a:hover {
 
 #handoutsLink {
   font-size: 24px;
-  display: inline-block;
+  display: block;
   padding: 20px 16px;
   background-color: #573F4C;
   color: #fff;
@@ -181,7 +187,7 @@ nav a:hover {
 
 #noteGuidesLink {
   font-size: 24px;
-  display: inline-block;
+  display: block;
   padding: 20px 16px;
   background-color: #573F4C;
   color: #fff;
@@ -194,7 +200,7 @@ nav a:hover {
 
 #practiceQuizzesLink {
   font-size: 24px;
-  display: inline-block;
+  display: block;
   padding: 20px 16px;
   background-color: #573F4C;
   color: #fff;
@@ -206,7 +212,7 @@ nav a:hover {
 
 #studyGuideLink {
   font-size: 24px;
-  display: inline-block;
+  display: block;
   padding: 20px 16px;
   background-color: #573F4C;
   color: #fff;
@@ -219,7 +225,7 @@ nav a:hover {
 
 #chapter3Link {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -235,7 +241,7 @@ nav a:hover {
 
 #chapter8Link {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -251,7 +257,7 @@ nav a:hover {
 
 #chapter7Link {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -267,7 +273,7 @@ nav a:hover {
 
 #chapter9Link {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -283,7 +289,7 @@ nav a:hover {
 
 #massageTerminology {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -299,7 +305,7 @@ nav a:hover {
 
 #fiveStrokes {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -315,7 +321,7 @@ nav a:hover {
 
 #endangermentSites {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -331,7 +337,7 @@ nav a:hover {
 
 #directionalTerms {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -347,7 +353,7 @@ nav a:hover {
 
 #chapter3Note {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -363,7 +369,7 @@ nav a:hover {
 
 #chapter8Note {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -379,7 +385,7 @@ nav a:hover {
 
 #chapter7Note {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -395,7 +401,7 @@ nav a:hover {
 
 #chapter9Note {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -412,7 +418,7 @@ nav a:hover {
 
 #chapter3Pq {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -428,7 +434,7 @@ nav a:hover {
 
 #chapter8Pq {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -444,7 +450,7 @@ nav a:hover {
 
 #chapter7Pq {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -460,7 +466,7 @@ nav a:hover {
 
 #chapter9Pq {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -477,7 +483,7 @@ nav a:hover {
 
 #directionalTermsPq {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -493,7 +499,7 @@ nav a:hover {
 
 #muscleConceptsPq {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -509,7 +515,7 @@ nav a:hover {
 
 #studyGuide {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -526,7 +532,7 @@ nav a:hover {
 
 #powerPointsLink2 {
   font-size: 24px;
-  display: inline-block;
+  display: block;
   padding: 20px 16px;
   background-color: #573F4C;
   color: #fff;
@@ -538,7 +544,7 @@ nav a:hover {
 
 #handoutsLink2 {
   font-size: 24px;
-  display: inline-block;
+  display: block;
   padding: 20px 16px;
   background-color: #573F4C;
   color: #fff;
@@ -551,7 +557,7 @@ nav a:hover {
 
 #noteGuidesLink2 {
   font-size: 24px;
-  display: inline-block;
+  display: block;
   padding: 20px 16px;
   background-color: #573F4C;
   color: #fff;
@@ -564,7 +570,7 @@ nav a:hover {
 
 #practiceQuizzesLink2 {
   font-size: 24px;
-  display: inline-block;
+  display: block;
   padding: 20px 16px;
   background-color: #573F4C;
   color: #fff;
@@ -576,7 +582,7 @@ nav a:hover {
 
 #studyGuideLink2 {
   font-size: 24px;
-  display: inline-block;
+  display: block;
   padding: 20px 16px;
   background-color: #573F4C;
   color: #fff;
@@ -589,7 +595,7 @@ nav a:hover {
 
 #chapter6Link {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -605,7 +611,7 @@ nav a:hover {
 
 #chapter10Link {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -621,7 +627,7 @@ nav a:hover {
 
 #footReflexology {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -637,7 +643,7 @@ nav a:hover {
 
 #massageEffects {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -653,7 +659,7 @@ nav a:hover {
 
 #footMap {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -669,7 +675,7 @@ nav a:hover {
 
 #chapter6Note {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -685,7 +691,7 @@ nav a:hover {
 
 #chapter10Note {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -701,7 +707,7 @@ nav a:hover {
 
 #chapter6Pq {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -717,7 +723,7 @@ nav a:hover {
 
 #chapter10Pq {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -733,7 +739,7 @@ nav a:hover {
 
 #studyGuide2 {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -751,7 +757,7 @@ nav a:hover {
 
 #powerPointsLink3 {
   font-size: 24px;
-  display: inline-block;
+  display: block;
   padding: 20px 16px;
   background-color: #573F4C;
   color: #fff;
@@ -764,7 +770,7 @@ nav a:hover {
 
 #noteGuidesLink3 {
   font-size: 24px;
-  display: inline-block;
+  display: block;
   padding: 20px 16px;
   background-color: #573F4C;
   color: #fff;
@@ -777,7 +783,7 @@ nav a:hover {
 
 #practiceQuizzesLink3 {
   font-size: 24px;
-  display: inline-block;
+  display: block;
   padding: 20px 16px;
   background-color: #573F4C;
   color: #fff;
@@ -789,7 +795,7 @@ nav a:hover {
 
 #studyGuideLink3 {
   font-size: 24px;
-  display: inline-block;
+  display: block;
   padding: 20px 16px;
   background-color: #573F4C;
   color: #fff;
@@ -802,7 +808,7 @@ nav a:hover {
 
 #chapter3Path {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -818,7 +824,7 @@ nav a:hover {
 
 #chapter2Link {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -834,7 +840,7 @@ nav a:hover {
 
 #chapter1Link {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -850,7 +856,7 @@ nav a:hover {
 
 #chapter3PathNote {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -866,7 +872,7 @@ nav a:hover {
 
 #chapter2Note {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -882,7 +888,7 @@ nav a:hover {
 
 #chapter3PathPq {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -898,7 +904,7 @@ nav a:hover {
 
 #chapter2Pq {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -914,7 +920,7 @@ nav a:hover {
 
 #chapter1Pq {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -930,7 +936,7 @@ nav a:hover {
 
 #studyGuide3 {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -946,7 +952,7 @@ nav a:hover {
 
 #powerPointsLink4 {
   font-size: 24px;
-  display: inline-block;
+  display: block;
   padding: 20px 16px;
   background-color: #573F4C;
   color: #fff;
@@ -959,7 +965,7 @@ nav a:hover {
 
 #noteGuidesLink4 {
   font-size: 24px;
-  display: inline-block;
+  display: block;
   padding: 20px 16px;
   background-color: #573F4C;
   color: #fff;
@@ -971,7 +977,7 @@ nav a:hover {
 
 #chapter14Link {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -987,7 +993,7 @@ nav a:hover {
 
 #chapter14Note {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1003,7 +1009,7 @@ nav a:hover {
 
 #powerPointsLink5 {
   font-size: 24px;
-  display: inline-block;
+  display: block;
   padding: 20px 16px;
   background-color: #573F4C;
   color: #fff;
@@ -1015,7 +1021,7 @@ nav a:hover {
 
 #chapter15Link {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1031,7 +1037,7 @@ nav a:hover {
 
 #jointMobilizations {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1047,7 +1053,7 @@ nav a:hover {
 
 #chapter11Link {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1063,7 +1069,7 @@ nav a:hover {
 
 #asianBodywork {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1079,7 +1085,7 @@ nav a:hover {
 
 #sportsMassage {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1095,7 +1101,7 @@ nav a:hover {
 
 #powerPointsLink6 {
   font-size: 24px;
-  display: inline-block;
+  display: block;
   padding: 20px 16px;
   background-color: #573F4C;
   color: #fff;
@@ -1108,7 +1114,7 @@ nav a:hover {
 
 #noteGuidesLink6 {
   font-size: 24px;
-  display: inline-block;
+  display: block;
   padding: 20px 16px;
   background-color: #573F4C;
   color: #fff;
@@ -1121,7 +1127,7 @@ nav a:hover {
 
 #practiceQuizzesLink6 {
   font-size: 24px;
-  display: inline-block;
+  display: block;
   padding: 20px 16px;
   background-color: #573F4C;
   color: #fff;
@@ -1133,7 +1139,7 @@ nav a:hover {
 
 #businessProject {
   font-size: 24px;
-  display: inline-block;
+  display: block;
   padding: 20px 16px;
   background-color: #573F4C;
   color: #fff;
@@ -1145,7 +1151,7 @@ nav a:hover {
 
 #chapter17Link {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1161,7 +1167,7 @@ nav a:hover {
 
 #chapter17Note {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1177,7 +1183,7 @@ nav a:hover {
 
 #chapter17Pq {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1193,7 +1199,7 @@ nav a:hover {
 
 #businessOutline {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1210,7 +1216,7 @@ nav a:hover {
 
 #businessExample {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1227,7 +1233,7 @@ nav a:hover {
 
 #businessFinancial {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1243,7 +1249,7 @@ nav a:hover {
 
 #massageRoutine {
   font-size: 24px;
-  display: inline-block;
+  display: block;
   padding: 20px 16px;
   background-color: #573F4C;
   color: #fff;
@@ -1255,7 +1261,7 @@ nav a:hover {
 
 #massageDemo {
   font-size: 24px;
-  display: inline-block;
+  display: block;
   padding: 20px 16px;
   background-color: #573F4C;
   color: #fff;
@@ -1267,7 +1273,7 @@ nav a:hover {
 
 #backRoutine {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1283,7 +1289,7 @@ nav a:hover {
 
 #postLegs {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1299,7 +1305,7 @@ nav a:hover {
 
 #faceNeckChest {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1315,7 +1321,7 @@ nav a:hover {
 
 #handsArms {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1331,7 +1337,7 @@ nav a:hover {
 
 #abdominals {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1347,7 +1353,7 @@ nav a:hover {
 
 #antLegsFeet {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1363,7 +1369,7 @@ nav a:hover {
 
 #upperBack {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1379,7 +1385,7 @@ nav a:hover {
 
 #lowBack1 {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1395,7 +1401,7 @@ nav a:hover {
 
 #lowBack2 {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1411,7 +1417,7 @@ nav a:hover {
 
 #postLegDemo {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1427,7 +1433,7 @@ nav a:hover {
 
 #face {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1443,7 +1449,7 @@ nav a:hover {
 
 #neckChest1 {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1459,7 +1465,7 @@ nav a:hover {
 
 #neckChest2 {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1476,7 +1482,7 @@ nav a:hover {
 
 #armsAbs {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1492,7 +1498,7 @@ nav a:hover {
 
 #musclePPT {
   font-size: 24px;
-  display: inline-block;
+  display: block;
   padding: 20px 16px;
   background-color: #573F4C;
   color: #fff;
@@ -1504,7 +1510,7 @@ nav a:hover {
 
 #muscleMeds {
   font-size: 24px;
-  display: inline-block;
+  display: block;
   padding: 20px 16px;
   background-color: #573F4C;
   color: #fff;
@@ -1516,7 +1522,7 @@ nav a:hover {
 
 #muscles {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1532,7 +1538,7 @@ nav a:hover {
 
 #med1 {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1548,7 +1554,7 @@ nav a:hover {
 
 #med2 {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1564,7 +1570,7 @@ nav a:hover {
 
 #med3 {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
@@ -1580,7 +1586,7 @@ nav a:hover {
 
 #med4 {
   font-size: 12px;
-  display: inline-block;
+  display: block;
   padding: 10px 8px;
   background-color: #fff;
   color: #573F4C;
