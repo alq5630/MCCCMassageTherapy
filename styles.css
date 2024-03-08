@@ -27,6 +27,7 @@ header:hover {
   text-shadow: 1px 1px 2px black;
 }
 
+/* Basic styling for navigation */
 nav {
   background-color: #A7727D;
   color: #fff;
@@ -121,21 +122,16 @@ nav a:hover {
 
   .sidebar {
     display: none;
-    /* Show the sidebar */
     width: 100%;
-    /* Occupy full width of the screen */
   }
 
   .content {
     width: 100%;
-    /* Occupy full width of the screen */
     margin-left: 0;
-    /* Remove left margin */
   }
 
   .centered-content {
     max-width: 90%;
-    /* Adjust maximum width for smaller screens */
   }
 }
 
