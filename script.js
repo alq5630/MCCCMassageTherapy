@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
       sidebar.style.display = 'none';
 
       // Load content for link1
-      loadSidebarContent('');
       loadMainContent('<iframe src="https://docs.google.com/document/d/e/2PACX-1vSddbmanBZraC7Bw3vAI392YhWfhyLOBtsMxq7zHtbdyvkloEYD4h0eS4bF3o0pkqLX1fC9GAvP7ym-/pub?embedded=true" width="100%" height="600px"></iframe>');
     });
 
