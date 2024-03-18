@@ -782,10 +782,11 @@ document.addEventListener('DOMContentLoaded', function() {
       sidebarContent += '<a href="#" id="muscles">Muscles</a><br>';
 
       sidebarContent += '<h2 id="muscleMeds">Muscle Meditations</h2><br>';
-      sidebarContent += '<a href="#" id="med1">Infraspinatus, Supraspinatus, Subscapularis, Teres Major and Minor</a><br>';
+      sidebarContent += '<a href="#" id="med1">Infraspinatus, Supraspinatus, Subscapularis, Deltoid, Teres Major and Minor</a><br>';
       sidebarContent += '<a href="#" id="med2">Rhomboids, Levator, and Serratus Posterior</a><br>';
       sidebarContent += '<a href="#" id="med3">Traps, Lats, and Serratus Anterior</a><br>';
       sidebarContent += '<a href="#" id="med4">QL’s and Longissimus</a><br>';
+      sidebarContent += '<a href="#" id="med5">Iliocostalis, Spinalis, and Multifidis</a><br>';
 
 
 
@@ -836,6 +837,11 @@ document.addEventListener('DOMContentLoaded', function() {
       document.getElementById('med4').addEventListener('click', function(e) {
         e.preventDefault();
         loadMainContent('<iframe width="960" height="540" src="https://voicethread.com/app/player/?threadId=27277219" frameborder="0" allowusermedia allowfullscreen allow="camera https://voicethread.com; microphone https://voicethread.com; fullscreen https://voicethread.com;"></iframe>');
+      });
+
+      document.getElementById('med5').addEventListener('click', function(e) {
+        e.preventDefault();
+        loadMainContent('<iframe width="960" height="540" src="https://voicethread.com/app/player/?threadId=27565797" frameborder="0" allowusermedia allowfullscreen allow="camera https://voicethread.com; microphone https://voicethread.com; fullscreen https://voicethread.com;"></iframe>');
       });
     });
 
