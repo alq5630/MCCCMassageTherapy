@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
       sidebar.style.display = 'none';
 
       // Load content for link1
-      loadMainContent('<iframe src="https://docs.google.com/document/d/e/2PACX-1vS4fuEfhpwniMj8rUrFaU8Mf9uT8rndT_whcIPA1fykgXpbz3fHq1fp9v1kEeT05wHgqeA--syQUodf/pub?embedded=true" width="100%" height="600px"></iframe>');
+      loadMainContent('<iframe src="https://docs.google.com/document/d/e/2PACX-1vRjbexa2T73Fp13FG1ABA6HgUxlwGET5xueH6snvvRs0rNuRhwJmbu4mWhdgR_P1mOR2vY-gwxbeZym/pub?embedded=true" width="100%" height="600px"></iframe>');
     });
 
     // Event listener for link2
