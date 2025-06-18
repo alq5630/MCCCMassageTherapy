@@ -631,12 +631,12 @@ document.addEventListener('DOMContentLoaded', function() {
       // Event Listener for Business Project
       document.getElementById('businessOutline').addEventListener('click', function(e) {
         e.preventDefault();
-        loadMainContent('<iframe src="https://docs.google.com/document/d/e/2PACX-1vSWZZCVh79O84fnIt8V_3BHJgV_vM9IEasEZEFrETuAKcd5LdH28el6KyEHz_egncN3Wc8l2eGHaJWi/pub?embedded=true" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>');
+        loadMainContent('<iframe src="https://docs.google.com/document/d/e/2PACX-1vTPmQWlWfbZYlxpelEJzXI2K5ORORoDPyBESMa27TvtXS6jL-1bDsWbP7ul194JhIlmr0RXwJEiTw7E/pub?embedded=true" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>');
       });
 
       document.getElementById('businessExample').addEventListener('click', function(e) {
         e.preventDefault();
-        loadMainContent('<iframe src="https://docs.google.com/document/d/e/2PACX-1vTPmQWlWfbZYlxpelEJzXI2K5ORORoDPyBESMa27TvtXS6jL-1bDsWbP7ul194JhIlmr0RXwJEiTw7E/pub?embedded=true" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>');
+        loadMainContent('<iframe src="https://docs.google.com/document/d/e/2PACX-1vSWZZCVh79O84fnIt8V_3BHJgV_vM9IEasEZEFrETuAKcd5LdH28el6KyEHz_egncN3Wc8l2eGHaJWi/pub?embedded=true" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>');
       });
 
       document.getElementById('businessFinancial').addEventListener('click', function(e) {
