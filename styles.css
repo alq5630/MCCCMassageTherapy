@@ -282,6 +282,52 @@ nav a:hover {
   background-color: #E4C3D1;
 }
 
+#c3Handout {
+  font-size: 12px;
+  display: block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#c3Handout:hover {
+  background-color: #E4C3D1;
+}
+#c7Handout {
+  font-size: 12px;
+  display: block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#c7Handout:hover {
+  background-color: #E4C3D1;
+}
+#c9Handout {
+  font-size: 12px;
+  display: block;
+  padding: 10px 8px;
+  background-color: #fff;
+  color: #573F4C;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+#c9Handout:hover {
+  background-color: #E4C3D1;
+}
+
 #massageTerminology {
   font-size: 12px;
   display: block;
