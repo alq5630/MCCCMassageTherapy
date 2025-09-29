@@ -37,6 +37,9 @@ document.addEventListener('DOMContentLoaded', function() {
       sidebarContent += '<a href="#" id="chapter9Link">Chapter 9: Standard Precautions, Contraindications, and Emergency Preparedness</a><br>';
       sidebarContent += '<a href="#" id="endangermentSites">Endangerment Sites</a><br>';
       sidebarContent += '<h2 id="handoutsLink">Handouts</h2>';
+      sidebarContent += '<a href="#" id="c3Handout">Chapter 3 Handout</a><br>';
+      sidebarContent += '<a href="#" id="c7Handout">Chapter 7 Handout</a><br>';
+      sidebarContent += '<a href="#" id="c9Handout">Chapter 9 Handout</a><br>';
       sidebarContent += '<a href="#" id="massageTerminology">Massage Terminology</a><br>';
       sidebarContent += '<a href="#" id="fiveStrokes">The Five Basic Strokes</a><br>';
       sidebarContent += '<h2 id="noteGuidesLink">Note Guides</h2><br>';
@@ -124,6 +127,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
       // Event Listeners for Handouts
+      document.getElementById('c3Handout').addEventListener('click', function(e) {
+        e.preventDefault();
+        loadMainContent('<iframe src="https://docs.google.com/document/d/e/2PACX-1vTbf0QGpvoXwEls8SS5T82sAyNHIv2xCGYrwq49XBQc1ANiu90wXBXb2RRz8s-6Q8KRoCRJUEUSnI9Z/pub?embedded=true" frameborder="0" width="100%" height="6000px"></iframe>');
+      });
+
+      document.getElementById('c7Handout').addEventListener('click', function(e) {
+        e.preventDefault();
+        loadMainContent('<iframe src="https://docs.google.com/document/d/e/2PACX-1vRQkfHUHYSSa8nfrPmhybOEJxq291PKjGwGctwMGJ0IZ0D53Dbx88wd0vhn8Pqf7XZn-cOLNiErlh0V/pub?embedded=true" frameborder="0" width="100%" height="6000px"></iframe>');
+      });
+
+      document.getElementById('c9Handout').addEventListener('click', function(e) {
+        e.preventDefault();
+        loadMainContent('<iframe src="https://docs.google.com/document/d/e/2PACX-1vQu870VVEUA22Dn9CcZ96ue-iTfOyMYdMMMqNYaIbMXS24S_XqnxQcHuox78ipGfH6F8zgiCotcY8X1/pub?embedded=true" frameborder="0" width="100%" height="6000px"></iframe>');
+      });
+      
       document.getElementById('massageTerminology').addEventListener('click', function(e) {
         e.preventDefault();
         loadMainContent('<iframe src="https://docs.google.com/document/d/e/2PACX-1vTNb6pRrRXlvhiBAbX-acrtwu3XSEhy75RH0ygnJobS29fKu84E-szQuaR0SL5bPlZxJATGUwQZrh6f/pub?embedded=true" frameborder="0" width="100%" height="6000px"></iframe>');
@@ -148,17 +166,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
       document.getElementById('chapter3Note').addEventListener('click', function(e) {
         e.preventDefault();
-        loadMainContent('<iframe src="https://docs.google.com/document/d/e/2PACX-1vQVskFFSSDjyl5TuZrcct0I1uLJAcMNYhw7GdIQZJL04GT02lVpkJbKFRgDH7Lw0bdYo5-M7BAYIw27/pub?embedded=true" frameborder="0" width="100%" height="12000px"></iframe>');
+        loadMainContent('<iframe src="https://docs.google.com/document/d/e/2PACX-1vRsnbyboILUhW8VMHaUAzdU9qXZj038lFs2tBlYq7rqfCN4jW5qCt03VnuRYXVCVtdmqGdd6hA3POud/pub?embedded=true" frameborder="0" width="100%" height="12000px"></iframe>');
       });
 
       document.getElementById('chapter8Note').addEventListener('click', function(e) {
         e.preventDefault();
-        loadMainContent('<iframe src="https://docs.google.com/document/d/e/2PACX-1vRX11qNZkwFbYZD9AGCwgZvy0qigGZjP5PAfiu7fukwOCzmbYJBT5MpFm2tb_fSZ5Bn9FtdnaJEpReS/pub?embedded=true" frameborder="0" width="100%" height="6000px"></iframe>');
+        loadMainContent('<iframe src="https://docs.google.com/document/d/e/2PACX-1vR1tWfSJuUGkNeIwx7JjahO67r6K8WY9Y8O2iyd68u9ZOU37Pvx8hR_Rwsd_E05AMhdLvcHOmeS86JF/pub?embedded=true" frameborder="0" width="100%" height="6000px"></iframe>');
       });
 
       document.getElementById('chapter7Note').addEventListener('click', function(e) {
         e.preventDefault();
-        loadMainContent('<iframe src="https://docs.google.com/document/d/e/2PACX-1vSZ5P3A9FFPaVhCRezVIGvsC7TJVCxcz3rG3iXKXE_KLAWla17ZTqBpJ16KBOxwCejuVWEVOpVs4qJ6/pub?embedded=true" frameborder="0" width="100%" height="6000px"></iframe>');
+        loadMainContent('<iframe src="https://docs.google.com/document/d/e/2PACX-1vRhbdiWKUbm7d26yK0joW-yo-5sF9zQHwIRO2cqR_a0ri6ImoXeSRI3EKk4gxERKSEGFIzIEQlE905J/pub?embedded=true" frameborder="0" width="100%" height="6000px"></iframe>');
       });
 
       document.getElementById('chapter9Note').addEventListener('click', function(e) {
@@ -180,17 +198,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
       document.getElementById('chapter3Pq').addEventListener('click', function(e) {
         e.preventDefault();
-        loadMainContent('<iframe src="https://docs.google.com/document/d/e/2PACX-1vRtSuNgvaKq4SKEvU42tIEBZeMM0CO06K4Mx8mC2xpXx9m2lymoU1WcH1cDzqhRtaLO720iiXsnRHrB/pub?embedded=true" frameborder="0" width="100%" height="6000px"></iframe>');
+        loadMainContent('<iframe src="https://docs.google.com/document/d/e/2PACX-1vSqCF9z6ugejAxsTKnyRn0FUfDT1KgcOO2DswHt_7oWP7mmlcwiVCJSNSMzvP_ZFBMMAJJySXdYvMKq/pub?embedded=true" frameborder="0" width="100%" height="6000px"></iframe>');
       });
 
       document.getElementById('chapter8Pq').addEventListener('click', function(e) {
         e.preventDefault();
-        loadMainContent('<iframe src="https://docs.google.com/document/d/e/2PACX-1vTGp-Y62PXPY1FKYpuBKl0K77GIOrovYMV63Io_NmJFisA5oeGhtTjrWX_V1EHADL7G2WNlBNHQUA-b/pub?embedded=true" frameborder="0" width="100%" height="6000px"></iframe>');
+        loadMainContent('<iframe src="https://docs.google.com/document/d/e/2PACX-1vTzkjgZMVuOs_qS2gmzTj3wKymJ-G4sV1n-5k-ydx_68wVlPTjyiXtSp9n9ChtyGQmVB6XNvLYrwv3b/pub?embedded=true" frameborder="0" width="100%" height="6000px"></iframe>');
       });
 
       document.getElementById('chapter7Pq').addEventListener('click', function(e) {
         e.preventDefault();
-        loadMainContent('<iframe src="https://docs.google.com/document/d/e/2PACX-1vSc0wSFADrfvm3N4fDsdC7fU6_6ytZrU-CwOTBWb0cofXA0y1lk-Al_zmM12OwRAVPG0EbNS6Fxg8YV/pub?embedded=true" frameborder="0" width="100%" height="6000px"></iframe>');
+        loadMainContent('<iframe src="https://docs.google.com/document/d/e/2PACX-1vQbqopHYbSvhlgM9V7nP8NF8QigEqMIaVo8SVgjVvcwoWwaAvVG59l9ArvA7HZFPuEcWeIxhptoxHVI/pub?embedded=true" frameborder="0" width="100%" height="6000px"></iframe>');
       });
 
       document.getElementById('chapter9Pq').addEventListener('click', function(e) {
@@ -202,7 +220,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Event Listener for Study Guide
       document.getElementById('studyGuide').addEventListener('click', function(e) {
         e.preventDefault();
-        loadMainContent('<iframe src="https://docs.google.com/document/d/e/2PACX-1vSOlZxvWYYcZCz78VcBDNd-Tu1N5SKAjTrQ3iJcbAHR3flriE2jSbYERy6O6WVq6w/pub?embedded=true" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>');
+        loadMainContent('<iframe src="https://docs.google.com/document/d/e/2PACX-1vQt5nBGA5NLr8IQ8IYXhcZfY-edVodp86skOlXUx_3xeOyRoz1V1EDQmnT80xwMNMTv7ELknE6fNyPx/pub?embedded=true" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>');
       });
     });
 
